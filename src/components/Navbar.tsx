@@ -16,9 +16,9 @@ const Navbar = () => {
 
   const navLinks = [
     { name: '首页', href: '#home' },
-    { name: '课程介绍', href: '#courses' },
-    { name: '教学特色', href: '#features' },
-    { name: '学员评价', href: '#testimonials' },
+    { name: '课程体系', href: '#courses' },
+    { name: '教学优势', href: '#features' },
+    { name: '学员心声', href: '#testimonials' },
     { name: '课程价格', href: '#pricing' },
     { name: '联系我们', href: '#contact' },
   ];
