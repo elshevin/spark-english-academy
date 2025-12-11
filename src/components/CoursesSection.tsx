@@ -18,7 +18,7 @@ const mainCourses = [
     id: 2,
     title: '大学学业辅导',
     subtitle: '课业提升',
-    description: '高等数学、线性代数、概率统计、大学物理等核心课程辅导，帮助学员夯实基础、提升绩点。',
+    description: '英语写作、论文优化、高等数学、大学物理等核心课程辅导，帮助学员夯实基础、提升绩点。',
     duration: '按学期定制',
     students: '12,000+',
     level: '适合在校大学生',
