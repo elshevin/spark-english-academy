@@ -1,12 +1,12 @@
-import { ArrowRight, Play, Star, Users, Award } from 'lucide-react';
+import { ArrowRight, Play, Star, Users, Award, GraduationCap } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import heroImage from '@/assets/hero-students.jpg';
 
 const HeroSection = () => {
   const stats = [
-    { icon: Users, value: '50,000+', label: '学员信赖' },
-    { icon: Star, value: '98%', label: '满意度' },
-    { icon: Award, value: '15年', label: '教学经验' },
+    { icon: Users, value: '30,000+', label: '学员信赖' },
+    { icon: GraduationCap, value: '89%', label: '考研上岸率' },
+    { icon: Award, value: '10年', label: '教学经验' },
   ];
 
   const scrollToContact = () => {
@@ -32,28 +32,28 @@ const HeroSection = () => {
             <div className="inline-flex items-center gap-2 bg-card px-4 py-2 rounded-full shadow-soft mb-6">
               <span className="w-2 h-2 bg-spark-orange rounded-full animate-pulse" />
               <span className="text-sm font-medium text-muted-foreground">
-                专业英语教育品牌
+                专业考研&学业辅导品牌
               </span>
             </div>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-primary leading-tight mb-6">
-              开启英语学习的
-              <span className="gradient-text block mt-2">新篇章</span>
+              助力升学梦想
+              <span className="gradient-text block mt-2">成就精彩未来</span>
             </h1>
 
             <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-xl">
-              言果教育专注于个性化英语教学，帮助每位学员找到最适合自己的学习方法，
-              从听说读写全方位提升英语能力，助您实现英语梦想。
+              言果教育专注于考研培训与大学学业辅导，同时提供雅思、托福、四六级等英语课程。
+              十年深耕教育行业，帮助数万学员圆梦名校、提升学业。
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 mb-12">
               <Button variant="spark" size="lg" className="group" onClick={scrollToContact}>
-                免费预约试听
+                免费预约咨询
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Button>
               <Button variant="outline" size="lg" className="group">
                 <Play className="w-5 h-5" />
-                观看介绍视频
+                了解课程体系
               </Button>
             </div>
 
@@ -95,8 +95,8 @@ const HeroSection = () => {
                     ))}
                   </div>
                   <div>
-                    <div className="font-semibold text-foreground">本周已有 128 人报名</div>
-                    <div className="text-sm text-muted-foreground">加入我们，开启英语学习之旅</div>
+                    <div className="font-semibold text-foreground">本周已有 86 人报名</div>
+                    <div className="text-sm text-muted-foreground">加入我们，开启升学之旅</div>
                   </div>
                 </div>
               </div>

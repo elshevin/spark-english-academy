@@ -1,35 +1,35 @@
-import { BookOpen, Users, Target, Clock, Headphones, Award } from 'lucide-react';
+import { BookOpen, Users, Target, Clock, GraduationCap, Award } from 'lucide-react';
 
 const features = [
   {
-    icon: Users,
-    title: '1对1个性化教学',
-    description: '根据每位学员的水平和目标，量身定制专属学习计划，确保高效学习。',
+    icon: GraduationCap,
+    title: '名校师资团队',
+    description: '985/211硕博师资，平均教龄8年以上，深谙考研命题规律与学业辅导方法。',
   },
   {
     icon: Target,
-    title: '考试冲刺培训',
-    description: '雅思、托福、四六级、考研英语等专项辅导，助您取得理想成绩。',
+    title: '精准备考体系',
+    description: '考研政英数全科覆盖，真题解析+考点预测，科学规划备考节奏。',
+  },
+  {
+    icon: Users,
+    title: '1对1定制辅导',
+    description: '根据学员基础和目标量身定制学习方案，针对性解决薄弱环节。',
   },
   {
     icon: BookOpen,
-    title: '口语实战训练',
-    description: '沉浸式口语练习，外教对话练习，让您自信开口说英语。',
+    title: '大学课业支持',
+    description: '高数、线代、概率等核心课程辅导，期末冲刺、绩点提升一站式服务。',
   },
   {
     icon: Clock,
-    title: '灵活上课时间',
-    description: '线上线下结合，自由选择上课时间，学习工作两不误。',
-  },
-  {
-    icon: Headphones,
-    title: '听力专项突破',
-    description: '精选真题听力材料，循序渐进提升听力理解能力。',
+    title: '灵活授课模式',
+    description: '线上线下结合，录播直播互补，随时随地高效学习。',
   },
   {
     icon: Award,
-    title: '名师团队授课',
-    description: '海归硕博师资，平均教龄8年以上，教学经验丰富。',
+    title: '全程督学服务',
+    description: '班主任跟踪学习进度，答疑解惑、心理疏导，陪伴式备考更安心。',
   },
 ];
 
@@ -40,13 +40,13 @@ const FeaturesSection = () => {
         {/* Section Header */}
         <div className="text-center mb-16 animate-fade-up">
           <span className="inline-block bg-spark-orange/10 text-secondary px-4 py-2 rounded-full text-sm font-medium mb-4">
-            教学特色
+            教学优势
           </span>
           <h2 className="section-title mb-4">
             为什么选择<span className="gradient-text">言果教育</span>？
           </h2>
           <p className="section-subtitle">
-            我们致力于提供最优质的英语教育服务，让每一位学员都能在轻松愉快的氛围中提升英语能力
+            十年深耕教育行业，以专业实力和贴心服务助力每一位学员实现升学梦想
           </p>
         </div>
 

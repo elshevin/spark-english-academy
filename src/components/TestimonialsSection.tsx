@@ -6,26 +6,26 @@ import testimonial3 from '@/assets/testimonial-3.jpg';
 const testimonials = [
   {
     id: 1,
-    name: '李雨萌',
-    role: '大学生 | 雅思7.5分',
+    name: '陈思远',
+    role: '2024届考研 | 上岸浙江大学',
     image: testimonial1,
-    content: '在言果教育学习了三个月，雅思从5.5提升到7.5分！老师针对我的弱项制定了专门的训练计划，尤其是口语和写作进步特别大。感谢言果教育，让我成功拿到了理想院校的offer！',
+    content: '在言果教育学习了8个月，从二本逆袭上岸浙大！老师们对考研命题规律把握非常准，政治和英语的押题几乎全中。班主任全程督学，让我在备考路上不孤单。感谢言果教育，圆了我的名校梦！',
     rating: 5,
   },
   {
     id: 2,
-    name: '张明辉',
-    role: '职场人士 | 商务英语',
+    name: '王嘉琪',
+    role: '大三学生 | 绩点提升3.2→3.8',
     image: testimonial2,
-    content: '作为一名外企员工，英语一直是我的短板。在言果教育学习商务英语后，现在开会发言、写英文邮件都变得游刃有余。课程内容非常实用，老师的教学方法也很高效。',
+    content: '大二时高数和线代挂科，找到言果教育补习后，不仅顺利补考通过，后续课程也都拿了高分。老师讲解很有耐心，把复杂的知识点拆解得很清楚。现在GPA达到3.8，顺利保研！',
     rating: 5,
   },
   {
     id: 3,
-    name: '王晓芳',
-    role: '学生家长',
+    name: '李泽涵',
+    role: '雅思学员 | 首考7.0分',
     image: testimonial3,
-    content: '女儿在言果教育学习英语两年了，从最初对英语没兴趣到现在主动要求学英语，变化太大了！老师们非常有耐心，教学方式也很适合孩子。看到孩子英语成绩稳步提升，我们全家都很满意。',
+    content: '原本只想考四六级，后来决定出国留学。在言果教育学习雅思三个月，首考就拿到7.0分。课程体系很完善，听说读写都有专项训练。老师还帮我规划了申请时间线，非常专业！',
     rating: 5,
   },
 ];
@@ -37,13 +37,13 @@ const TestimonialsSection = () => {
         {/* Section Header */}
         <div className="text-center mb-16 animate-fade-up">
           <span className="inline-block bg-spark-orange/10 text-secondary px-4 py-2 rounded-full text-sm font-medium mb-4">
-            学员评价
+            学员心声
           </span>
           <h2 className="section-title mb-4">
             听听他们<span className="gradient-text">怎么说</span>
           </h2>
           <p className="section-subtitle">
-            来自真实学员的学习心得与反馈，见证言果教育的教学成果
+            真实学员的学习经历与反馈，见证言果教育的教学成果
           </p>
         </div>
 
@@ -98,13 +98,13 @@ const TestimonialsSection = () => {
         {/* Trust Badges */}
         <div className="mt-16 flex flex-wrap justify-center items-center gap-8 opacity-60">
           <div className="text-center">
-            <div className="font-display font-bold text-4xl text-primary">50,000+</div>
+            <div className="font-display font-bold text-4xl text-primary">30,000+</div>
             <div className="text-muted-foreground">学员选择</div>
           </div>
           <div className="w-px h-12 bg-border hidden md:block" />
           <div className="text-center">
-            <div className="font-display font-bold text-4xl text-primary">98%</div>
-            <div className="text-muted-foreground">学员满意度</div>
+            <div className="font-display font-bold text-4xl text-primary">89%</div>
+            <div className="text-muted-foreground">考研上岸率</div>
           </div>
           <div className="w-px h-12 bg-border hidden md:block" />
           <div className="text-center">
@@ -113,7 +113,7 @@ const TestimonialsSection = () => {
           </div>
           <div className="w-px h-12 bg-border hidden md:block" />
           <div className="text-center">
-            <div className="font-display font-bold text-4xl text-primary">15年</div>
+            <div className="font-display font-bold text-4xl text-primary">10年</div>
             <div className="text-muted-foreground">教学经验</div>
           </div>
         </div>

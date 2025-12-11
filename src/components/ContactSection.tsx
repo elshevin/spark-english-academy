@@ -51,10 +51,10 @@ const ContactSection = () => {
             联系我们
           </span>
           <h2 className="section-title mb-4">
-            开启您的<span className="gradient-text">英语学习之旅</span>
+            开启您的<span className="gradient-text">升学之旅</span>
           </h2>
           <p className="section-subtitle">
-            填写表单获取免费试听机会，专业课程顾问将为您量身定制学习方案
+            填写表单获取免费咨询，专业课程顾问将为您量身定制学习方案
           </p>
         </div>
 
@@ -62,7 +62,7 @@ const ContactSection = () => {
           {/* Contact Form */}
           <div className="bg-card rounded-3xl p-8 shadow-card animate-fade-up">
             <h3 className="text-2xl font-display font-bold text-foreground mb-6">
-              免费预约试听
+              免费预约咨询
             </h3>
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid sm:grid-cols-2 gap-4">
@@ -103,10 +103,10 @@ const ContactSection = () => {
                   className="w-full px-4 py-3 rounded-xl border border-border bg-background text-foreground focus:ring-2 focus:ring-secondary focus:border-transparent outline-none transition-all"
                 >
                   <option value="">请选择课程</option>
-                  <option value="ielts">雅思培训</option>
-                  <option value="toefl">托福培训</option>
-                  <option value="business">商务英语</option>
-                  <option value="youth">青少年英语</option>
+                  <option value="kaoyan">考研全程班</option>
+                  <option value="daxue">大学学业辅导</option>
+                  <option value="ielts">雅思/托福培训</option>
+                  <option value="cet">四六级/通用英语</option>
                   <option value="other">其他课程</option>
                 </select>
               </div>

@@ -1,26 +1,20 @@
 import { Mail, MapPin } from 'lucide-react';
+
 const Footer = () => {
-  const quickLinks = [{
-    name: '关于我们',
-    href: '#'
-  }, {
-    name: '课程介绍',
-    href: '#courses'
-  }, {
-    name: '教学特色',
-    href: '#features'
-  }, {
-    name: '学员评价',
-    href: '#testimonials'
-  }, {
-    name: '课程价格',
-    href: '#pricing'
-  }, {
-    name: '联系我们',
-    href: '#contact'
-  }];
-  const courses = ['雅思培训', '托福培训', '商务英语', '青少年英语', '考研英语', '四六级培训'];
-  return <footer className="bg-primary text-primary-foreground">
+  const quickLinks = [
+    { name: '关于我们', href: '#' },
+    { name: '课程介绍', href: '#courses' },
+    { name: '教学优势', href: '#features' },
+    { name: '学员心声', href: '#testimonials' },
+    { name: '课程价格', href: '#pricing' },
+    { name: '联系我们', href: '#contact' },
+  ];
+
+  const mainCourses = ['考研全程班', '大学学业辅导', '考研政治', '考研英语', '考研数学'];
+  const englishCourses = ['雅思培训', '托福培训', '四六级培训', '通用英语'];
+
+  return (
+    <footer className="bg-primary text-primary-foreground">
       <div className="section-container py-16">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand */}
@@ -31,11 +25,19 @@ const Footer = () => {
               </div>
               <span className="font-display font-bold text-xl">言果教育</span>
             </div>
-            <p className="text-primary-foreground/80 leading-relaxed mb-6">言果教育专注于个性化英语教学，3年来帮助超过10,000名学员实现英语梦想。</p>
+            <p className="text-primary-foreground/80 leading-relaxed mb-6">
+              言果教育专注于考研培训与大学学业辅导，十年来帮助超过30,000名学员实现升学梦想。
+            </p>
             <div className="flex gap-4">
-              {['微信', '微博', '抖音'].map(social => <a key={social} href="#" className="w-10 h-10 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-spark-orange transition-colors">
+              {['微信', '微博', '抖音'].map((social) => (
+                <a
+                  key={social}
+                  href="#"
+                  className="w-10 h-10 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-spark-orange transition-colors"
+                >
                   <span className="text-sm">{social[0]}</span>
-                </a>)}
+                </a>
+              ))}
             </div>
           </div>
 
@@ -43,24 +45,54 @@ const Footer = () => {
           <div>
             <h4 className="font-display font-bold text-lg mb-6">快速链接</h4>
             <ul className="space-y-3">
-              {quickLinks.map(link => <li key={link.name}>
-                  <a href={link.href} className="text-primary-foreground/80 hover:text-spark-orange transition-colors">
+              {quickLinks.map((link) => (
+                <li key={link.name}>
+                  <a
+                    href={link.href}
+                    className="text-primary-foreground/80 hover:text-spark-orange transition-colors"
+                  >
                     {link.name}
                   </a>
-                </li>)}
+                </li>
+              ))}
             </ul>
           </div>
 
           {/* Courses */}
           <div>
             <h4 className="font-display font-bold text-lg mb-6">课程分类</h4>
-            <ul className="space-y-3">
-              {courses.map(course => <li key={course}>
-                  <a href="#courses" className="text-primary-foreground/80 hover:text-spark-orange transition-colors">
-                    {course}
-                  </a>
-                </li>)}
-            </ul>
+            <div className="space-y-4">
+              <div>
+                <div className="text-sm text-primary-foreground/60 mb-2">核心课程</div>
+                <ul className="space-y-2">
+                  {mainCourses.map((course) => (
+                    <li key={course}>
+                      <a
+                        href="#courses"
+                        className="text-primary-foreground/80 hover:text-spark-orange transition-colors"
+                      >
+                        {course}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div>
+                <div className="text-sm text-primary-foreground/60 mb-2">英语课程</div>
+                <ul className="space-y-2">
+                  {englishCourses.map((course) => (
+                    <li key={course}>
+                      <a
+                        href="#courses"
+                        className="text-primary-foreground/80 hover:text-spark-orange transition-colors"
+                      >
+                        {course}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
           </div>
 
           {/* Contact */}
@@ -88,21 +120,34 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="mt-12 pt-8 border-t border-primary-foreground/20">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-primary-foreground/60 text-sm">© 2025 言果教育. All rights reserved.</p>
+            <p className="text-primary-foreground/60 text-sm">
+              © 2025 言果教育. All rights reserved.
+            </p>
             <div className="flex gap-6 text-sm">
-              <a href="#" className="text-primary-foreground/60 hover:text-spark-orange transition-colors">
+              <a
+                href="#"
+                className="text-primary-foreground/60 hover:text-spark-orange transition-colors"
+              >
                 隐私政策
               </a>
-              <a href="#" className="text-primary-foreground/60 hover:text-spark-orange transition-colors">
+              <a
+                href="#"
+                className="text-primary-foreground/60 hover:text-spark-orange transition-colors"
+              >
                 用户协议
               </a>
-              <a href="#" className="text-primary-foreground/60 hover:text-spark-orange transition-colors">
+              <a
+                href="#"
+                className="text-primary-foreground/60 hover:text-spark-orange transition-colors"
+              >
                 网站地图
               </a>
             </div>
           </div>
         </div>
       </div>
-    </footer>;
+    </footer>
+  );
 };
+
 export default Footer;
