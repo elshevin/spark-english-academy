@@ -104,9 +104,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="mt-12 pt-8 border-t border-primary-foreground/20">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-primary-foreground/60 text-sm">
-              © 2025 言果教育. All rights reserved.
-            </p>
+            <p className="text-primary-foreground/60 text-sm">© 2025 言果教育. All rights reserved. | 浙ICP备2025160891号-1</p>
             <div className="flex gap-6 text-sm">
               <a href="#" className="text-primary-foreground/60 hover:text-spark-orange transition-colors">
                 隐私政策
